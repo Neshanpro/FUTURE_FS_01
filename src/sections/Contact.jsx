@@ -22,16 +22,16 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        'service_v565juf',
+        'template_rnp6rpp',
         {
           from_name: form.name,
           to_name: 'Neshan Parvej Sajal',
           from_email: form.email,
-          to_email: 'neshanparvej@gmail.com',
+          to_email: 'uzumakineshan@gmail.com',
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
+        'kbncEDuhW62bVhQIz',
       )
       .then(
         () => {
@@ -88,7 +88,7 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 className="field-input"
-                placeholder="ex., John Doe"
+                placeholder="John Doe"
               />
             </label>
 
@@ -101,7 +101,7 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 className="field-input"
-                placeholder="ex., johndoe@gmail.com"
+                placeholder="johndoe@gmail.com"
               />
             </label>
 
